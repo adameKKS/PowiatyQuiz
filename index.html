@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <title>Zgadywarka miast powiatowych</title>
+    <meta name="description" content="Zgaduj zgadula jakie to miasto."/> <!-- 155-160 words --> 
+    <meta name="keywords" content="quiz, powiaty, miasta, test, geo, guesser"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<div id="container">
+    <div id="logo">
+        <img src="img/WYPIERDALAJ.png"/>
+    </div>
+    <div id="left">
+        
+    </div>
+    <div id="center">
+        <h1>WITAM W CHUJ</h1>
+        Tutaj będzie ładna strona <br />
+        Normalnie <br />
+        <a href="https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&titles=%C5%9Arem&formatversion=2&rvprop=content&rvslots=*"
+            target="_blank" title="kliknij tu dalej">Przykładowe wywołanie WIKI API (Śrem)</a>
+        <br />
+        Keyword: total_population.<br />
+        <img height="100" width="200" src="img/lewy_barceloniak.jpg" />
+        <input type="text" id="field"/>
+        <input type="submit" value="SPRAWDŹ" onclick="checkPopulation()"/>
+        <div id="response">
+            Odpowiedź:
+        </div>
+    </div>
+    <div id="right">
+        <table class="my-table">
+            <tr>
+              <td>Powiat:</td>
+              <td id="powiat">chuj1</td>
+            </tr>
+            <tr>
+              <td>Miasto powiatowe:</td>
+              <td id="miasto_powiatowe">chuj2</td>
+            </tr>
+            <tr>
+              <td>Rejestracja:</td>
+              <td id="rejestracja">chuj3</td>
+            </tr>
+            <tr>
+              <td>Województwo:</td>
+              <td id="wojewodztwo">chuj 4</td>
+            </tr>
+          </table>
+    </div>
+    <div id="footer">
+        All rights reserved chuj do dupy psom ogunie
+    </div>
+</div>
+</body>
+</html>

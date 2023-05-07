@@ -1,0 +1,70 @@
+body
+        {
+            background-color: rgb(39, 37, 37);
+        }
+        img 
+        {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        #container
+        {
+            width: 1000px;
+            height: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: aquamarine;
+            padding: 2%;
+        }
+        #logo
+        {
+            height: 10%;
+            background-color: blueviolet;
+            
+        }
+        #left
+        {
+            background-color: rgb(255, 0, 0);
+            float: left;
+            width: 20%;
+            min-height: 80%;
+        }
+        #center
+        {
+            background-color: khaki;
+            float: left;
+            width: 40%;
+            min-height: 80%;
+
+        }
+        #right
+        {
+            background-color: rgb(0, 255, 0);
+            float: left;
+            width: 40%;
+            min-height: 80%;
+
+        }
+        #footer
+        {
+            background-color: black;
+            clear: both;
+            height: 10%;
+            color: white;
+        }
+        #response
+        {
+            background-color: greenyellow;
+            height: 20%;
+            padding: 5%;
+            font-size: 2em;
+        }
+        .my-table
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .my-table td {
+            border: 1px solid black;
+            padding: 10px;
+          }
