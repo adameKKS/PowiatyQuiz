@@ -59,6 +59,10 @@ body
             padding: 5%;
             font-size: 2em;
         }
+        #map
+        {
+            height: 200px;
+        }
         .my-table
         {
             border: 1px solid black;
