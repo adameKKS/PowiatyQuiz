@@ -27,13 +27,6 @@ function checkPopulation()
         })
             .then(res => res.json())
             .then(data => {
-                // 
-                var map = L.map('map').setView([51.505, -0.09], 13);
-                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                            maxZoom: 19,
-                            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                            }).addTo(map);
-                //
                 let nextDir;
                 console.log("tutaj jestem ");
                 for(let i in data.query.pages)
@@ -49,6 +42,21 @@ function checkPopulation()
                 const population = match ? parseInt(match[1].replace(/\s|,|&nbsp;/g, "")) : null;
                 console.log(population);
                 document.getElementById("response").innerHTML=population;
+
+                
+                return fetch('powiaty-medium.geojson')
+        })
+                .then(res => res.json())
+                .then(data => {
+                    // 
+                    var map = L.map('map').setView([51.919, 19.1451], 5);
+                    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            maxZoom: 19,
+                            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                            }).addTo(map);
+                    L.geoJSON(data).addTo(map);
+                    //
+                    
         })
         .catch(error => console.log(error));
 }
